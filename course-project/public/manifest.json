@@ -1,3 +1,42 @@
 {
-  
+  "name": "",
+  "short_name": "",
+  "start_url": "",
+  "scope": ".",
+  "display": "",
+  "background_color": "",
+  "theme_color": "",
+  "description": "",
+  "dir": "ltr",
+  "lang": "en-US",
+  "orientation": "protrait-primary",
+  "icons": [
+    {
+      "src": "[path]",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "[path]",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "[path]",
+      "type": "image/png",
+      "sizes": "126x128"
+    },
+    {
+      "src": "[path]",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://...",
+      "id": "com.example.app1"
+    }
+  ]
 }
