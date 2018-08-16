@@ -24,6 +24,17 @@ var promise = new Promise(function(resolve, reject) {
   }, 3000);
 });
 
+fetch('https://httpbin.org/ip')
+.then(function(response){
+  console.log(response);
+  response.json()
+    .then(function(data) {
+      console.log(data);
+    }).catch(function(err) {
+      console.log(err);
+    });
+});
+
 // promise.then(function(text) {
 //   return text;
 // }, function(err) {
@@ -36,8 +47,8 @@ promise.then(function(text) {
   return text;
 }).then(function(newText) {
   console.log(newText);
-}).catch(err) {
+}).catch(function(err) {
   console.log(err.code, err.message);
-};
+});
 
 console.log('This is executed right after setTimeout()');
